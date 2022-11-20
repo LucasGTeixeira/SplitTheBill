@@ -3,7 +3,6 @@ package com.lucasgteixeira.splitthebill.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
@@ -48,8 +47,6 @@ class MainActivity : AppCompatActivity() {
 
         personAdapter = PersonAdapter(this, personList)
         amb.personLv.adapter = personAdapter
-
-        if(personList.size > 0) modifyPersonList()
 
         personAdapter.notifyDataSetChanged()
 

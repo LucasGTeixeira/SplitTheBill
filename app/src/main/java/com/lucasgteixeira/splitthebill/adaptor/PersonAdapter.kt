@@ -40,9 +40,9 @@ class PersonAdapter (
                 spentTv.text = "Money Spent: " + person.spent
                 if(person.debt.toDouble() < 0){
                     person.debt = (person.debt.toDouble() * -1).toString()
-                    debtTv.text = "Must Receive: " + person.debt
+                    debtTv.text = "Must Receive: R$" + person.debt
                 }
-                else debtTv.text = "Must Pay: " + person.debt
+                else debtTv.text = "Must Pay: R$" + person.debt
             }
 
             return personTileView
